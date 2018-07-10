@@ -12,6 +12,7 @@ class LoginForm extends Component {
       <Card>
         <CardSection>
           <Input
+            autoCorrect='false'
             label='Email:'
             onChangeText={email => this.setState({ email })}
             placeholder='me@myDomain.com'
@@ -21,7 +22,7 @@ class LoginForm extends Component {
 
         <CardSection>
           <Input
-            auto
+            autoCorrect='false'
             label='Password:'
             onChangeText={password => this.setState({ password })}
             placeholder='My secret word'
