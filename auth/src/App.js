@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { View, Text } from 'react-native';
+import { View } from 'react-native';
 import Firebase from 'firebase';
 
 import { Header } from './components/common';
@@ -9,7 +9,6 @@ import LoginForm from './components/LoginForm';
 
 class App extends Component {
   componentWillMount() {
-    // Initialize Firebase
     Firebase.initializeApp(firebaseConfig);
   }
 
@@ -20,11 +19,11 @@ class App extends Component {
           headerText='Authorisation, Baby yeah!'
           slugText='You know you like it!'
         />
-      <Text>YEAH!</Text>
       <LoginForm />
       </View>
     );
   }
 }
+
 
 export default App;
