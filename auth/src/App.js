@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { View } from 'react-native';
-import Firebase from 'firebase';
+import firebase from 'firebase';
 
 import { Header } from './components/common';
 import firebaseConfig from './components/config/firebaseConfig';
@@ -9,7 +9,7 @@ import LoginForm from './components/LoginForm';
 
 class App extends Component {
   componentWillMount() {
-    Firebase.initializeApp(firebaseConfig);
+      firebase.initializeApp(firebaseConfig);
   }
 
   render() {
@@ -24,6 +24,5 @@ class App extends Component {
     );
   }
 }
-
 
 export default App;
